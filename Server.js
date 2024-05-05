@@ -69,6 +69,7 @@ const db = require('./db');
 
 const bodyParser = require('body-parser');// convert the client side data any formate in required formate
 app.use(bodyParser.json()); // and  store data in (req.body  -> sintex)
+const PORT = process.env.PORT || 3000;//dotenv function
 
 
 // Get Method
@@ -87,7 +88,10 @@ app.get('/' , function(req, res){
     const Menuerouter = require("./routers/MenueRoutes");
     app.use('/menue',Menuerouter);
 
-app.listen(3000,()=>{
+
+   
+// app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("Live server localhost 3000");
 })
 
