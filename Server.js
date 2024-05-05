@@ -65,12 +65,12 @@ console.log(Json);*/
 const express = require('express');
 const app = express();
 const db = require('./db');
-// require('dotenv').config();
+require('dotenv').config();
 
 
 const bodyParser = require('body-parser');// convert the client side data any formate in required formate
 app.use(bodyParser.json()); // and  store data in (req.body  -> sintex)
-// const PORT = process.env.PORT || 3000;//dotenv function
+const PORT = process.env.PORT || 3000;//dotenv function
 
 
 // Get Method
@@ -91,8 +91,8 @@ app.get('/' , function(req, res){
 
 
    
-app.listen(3000,()=>{
-// app.listen(PORT,()=>{
+// app.listen(3000,()=>{
+app.listen(PORT,()=>{
     console.log("Live server localhost 3000");
 })
 
