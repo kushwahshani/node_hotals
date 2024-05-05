@@ -2,7 +2,8 @@ const mongoose = require('mongoose');
 
 // define the mongodb connection URL
 
-const mongoURL = 'mongodb://127.0.0.1:27017/hotal' // rplace hotal that is not parmanent (hotal is a database name)
+// const mongoURL = 'mongodb://127.0.0.1:27017/hotal' // rplace hotal that is not parmanent (hotal is a database name)
+const mongoURL = 'mongodb+srv://kushwahshni:<shanikushwah123>@cluster0.yc8ikgh.mongodb.net/' // rplace hotal that is not parmanent (hotal is a database name)
 
 // set up Mongodb connection
 
